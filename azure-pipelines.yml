@@ -1,29 +1,16 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
-trigger:
-- master
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
-- task: PublishCodeCoverageResults@1
-  inputs:
-    codeCoverageTool: "JaCoCo"
-    summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
-    reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco"
-    failIfCoverageEmpty: true
-
+actions:
+- action: "Push to https://github.com/bha8141/mavenbuild.git"
+  type: "PUSH"
+  login: "snehithaanpur456@gmail.com"
+  password: "LiveLifeLove@81"
+  push_tags: false
+  git_auth_mode: "HTTP"
+  target_branch: "$develop"
+  push_url: "https://github.com/bha8141/mavenbuild.git"
+  comment: "$BUDDY_EXECUTION_ID"
+  tag: "tagName"
+  deployment_excludes:
+  - "/tmp/"
+  trigger_condition: "ALWAYS"
+  use_custom_gitignore: true
+  without_force: false
