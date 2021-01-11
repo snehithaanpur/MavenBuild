@@ -1,4 +1,4 @@
-actions:
+
 - action: "Push to https://github.com/bha8141/mavenbuild.git"
   type: "PUSH"
   login: "snehithaanpur456@gmail.com"
