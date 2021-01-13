@@ -3,10 +3,13 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+
 trigger:
 - develop
 
 steps:
+- checkout: self
+  persistCredentials: true
 - script:   
     exec git config user.email "snehithaanpur456@gmail.com"
     exec git config user.name "Snehitha Anpur"
