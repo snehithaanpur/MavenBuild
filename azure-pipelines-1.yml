@@ -8,5 +8,5 @@ trigger:
 
 steps:
 - script:  git push https://github.com/bha8141/mavenbuild.git HEAD:develop
-
- 
+   username:bharathkashe@gmail.com
+   password:bharath@8141
