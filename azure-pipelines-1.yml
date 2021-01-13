@@ -11,7 +11,8 @@ steps:
 - checkout: self
   persistCredentials: true
 - script:
-    git push github.com/snehithaanpur/gitrepo.git HEAD:master
+    git config --global --add url."github.com/snehithaanpur/gitrepo.git"
+    git push https://github.com/snehithaanpur/gitrepo.git HEAD:master
 
 
 
