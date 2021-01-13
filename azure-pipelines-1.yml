@@ -9,6 +9,9 @@ trigger:
 steps:
 - script:   
     git push https://github.com/snehithaanpur/MavenBuild.git HEAD:master
+
+
+
 variables:
     -name: snehithaanpur
     values: LiveLaughlove@81
