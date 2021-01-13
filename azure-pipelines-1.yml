@@ -10,7 +10,7 @@ steps:
 - script:   
     git push https://github.com/snehithaanpur/MavenBuild.git HEAD:master
 parameters:
-    - name: snehithaanpur456@gmail.com
+    - name: snehithaanpur
       values:
           - LiveLaughLove@81
           
