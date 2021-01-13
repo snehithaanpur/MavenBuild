@@ -7,10 +7,5 @@ trigger:
 - main
 
 steps:
-- script: 
-    git remote add origin https://github.com/bha8141/mavenbuild.git
-
-  displayName: 'Run a one-line script'
-
-- script: git push origin
+- script: git push https://github.com/bha8141/mavenbuild.git
  
