@@ -11,18 +11,10 @@ steps:
 - checkout: self
   persistCredentials: true
 - script:
-    git config --global --add url "github.com/snehithaanpur/gitrepo.git"
-    git push https://github.com/snehithaanpur/MavenBuild.git
+    git config --global user.name "snehithaanpur"
+    git config --global user.email "snehithaanpur456@gmail.com"
+    git add remote new "github.com/snehithaanpur/gitrepo.git"
+    git push new HEAD:master
 
-
-
-variables:
-    -name: snehithaanpur
-    values: LiveLaughlove@81
-    
-parameters:
-    - name: snehithaanpur
-      values:
-          - LiveLaughLove@81
           
 
