@@ -7,5 +7,6 @@ trigger:
 - develop
 
 steps:
-- script: git push https://github.com/bha8141/mavenbuild.git
+- script:  git push https://github.com/bha8141/mavenbuild.git HEAD:develop
+
  
