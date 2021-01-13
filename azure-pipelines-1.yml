@@ -7,6 +7,5 @@ trigger:
 - develop
 
 steps:
-- script:  git push https://github.com/bha8141/mavenbuild.git HEAD:develop
-   username:bharathkashe@gmail.com
-   password:bharath@8141
+- script:  git push https://github.com/snehithaanpur/MavenBuild.git HEAD:master
+variables:$(snehithaanpur456@gmail.com)
