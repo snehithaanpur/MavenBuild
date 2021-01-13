@@ -4,10 +4,10 @@ jobs:
 
     steps:
       - script: git remote add sample https://github.com/snehithaanpur/MavenBuild.git
-      - script: 
-          git push sample HEAD:master
-          echo "snehithaanpur456@gmail.com"
-          echo "LiveLaughLove@81"
+      - script: git push sample HEAD:master
+      - script: echo "snehithaanpur456@gmail.com"
+      - script: echo "LiveLaughLove@81"
+          
 
               
 
