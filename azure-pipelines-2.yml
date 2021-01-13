@@ -2,6 +2,6 @@
   - job: PUSH
     steps:
       - script: git remote add sample https://github.com/snehithaanpur/MavenBuild.git
-      - script: git push sample HEAD:<master>
+      - script: git push sample HEAD:master
  
 
