@@ -13,7 +13,7 @@ steps:
 - script: git config --global user.name "snehithaanpur"
 - script: git config --global user.email "snehithaanpur456@gmail.com"
 - script: git remote add new "https://github.com/snehithaanpur/MavenBuild.git"
-- script: git push new master
+- script: git push new HEAD:master
 
           
 
