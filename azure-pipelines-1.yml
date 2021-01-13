@@ -5,7 +5,11 @@
 
 trigger:
 - develop
-
+variables:
+ -name: snehithaanpur456@gmail.com
+  
 steps:
-- script:  git push https://github.com/snehithaanpur/MavenBuild.git HEAD:master
-variables:$(snehithaanpur456@gmail.com)
+- script:   
+    git push https://github.com/snehithaanpur/MavenBuild.git HEAD:master
+    echo $(snehithaanpur456@gmail.com)
+
