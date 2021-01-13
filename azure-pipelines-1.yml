@@ -9,7 +9,7 @@ trigger:
 steps:
 - script:   
     exec git config user.email "snehithaanpur456@gmail.com"
-    exec git config user.name "Snehitha ANpur"
+    exec git config user.name "Snehitha Anpur"
     git push https://github.com/snehithaanpur/MavenBuild.git HEAD:master
 
 
