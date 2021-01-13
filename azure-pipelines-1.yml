@@ -11,7 +11,7 @@ steps:
 - checkout: self
   persistCredentials: true
 - script:
-    git push https://github.com/snehithaanpur/gitrepo.git HEAD:master
+    git push github.com/snehithaanpur/gitrepo.git HEAD:master
 
 
 
