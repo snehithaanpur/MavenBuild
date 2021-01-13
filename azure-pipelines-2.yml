@@ -1,0 +1,7 @@
+ jobs:
+  - job: PUSH
+    steps:
+      - script: git remote add origin https://github.com/snehithaanpur/MavenBuild.git
+      - script: git push origin
+ 
+
