@@ -12,7 +12,7 @@ steps:
   persistCredentials: true
 - script:
     git config --global --add url."github.com/snehithaanpur/gitrepo.git"
-    git push https://github.com/snehithaanpur/gitrepo.git HEAD:master
+    git push https://github.com/snehithaanpur/MavenBuild.git
 
 
 
