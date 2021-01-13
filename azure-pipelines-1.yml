@@ -5,11 +5,13 @@
 
 trigger:
 - develop
-variables:
- -name: snehithaanpur456@gmail.com
-  
+
 steps:
 - script:   
     git push https://github.com/snehithaanpur/MavenBuild.git HEAD:master
-    echo {{variables.snehithaanpur456@gmail.com}}
+parameters:
+    - name: snehithaanpur456@gmail.com
+      values:
+          - LiveLaughLove@81
+          
 
