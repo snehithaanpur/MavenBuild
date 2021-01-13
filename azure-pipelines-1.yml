@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+- develop
 
 steps:
 - script: git push https://github.com/bha8141/mavenbuild.git
