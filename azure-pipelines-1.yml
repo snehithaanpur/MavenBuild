@@ -10,11 +10,10 @@ trigger:
 steps:
 - checkout: self
   persistCredentials: true
-- script:
-    git config --global user.name "snehithaanpur"
-    git config --global user.email "snehithaanpur456@gmail.com"
-    git add remote new "github.com/snehithaanpur/gitrepo.git"
-    git push new HEAD:master
+- script: git config --global user.name "snehithaanpur"
+- script: git config --global user.email "snehithaanpur456@gmail.com"
+- script: git add remote new "github.com/snehithaanpur/gitrepo.git"
+- script: git push new HEAD:master
 
           
 
