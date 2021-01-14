@@ -12,8 +12,8 @@ steps:
   persistCredentials: true
 - script: git config --global user.name "snehithaanpur"
 - script: git config --global user.email "snehithaanpur456@gmail.com"
-- script: $ git remote add origin "https://github.com/snehithaanpur/MavenBuild.git"
-- script: git push new origin --force
+- script: $ git remote add first "https://github.com/snehithaanpur/MavenBuild.git"
+- script: git push new first --force
 
           
 
