@@ -5,14 +5,14 @@
 
 
 trigger:
-- develop
+- master
 
 steps:
 - checkout: self
   persistCredentials: true
 - script: git config --global user.name "snehithaanpur"
 - script: git config --global user.email "snehithaanpur456@gmail.com"
-- script: $ git remote set-url origin https://github.com/snehithaanpur/MavenBuild.git
+- script: $ git add remote origin https://github.com/snehithaanpur/MavenBuild.git
 - script: git push new origin --force
 
           
