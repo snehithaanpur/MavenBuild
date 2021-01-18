@@ -11,7 +11,8 @@ pool:
 
 steps:
 - script: git config --global user.name "Snehitha Anpur"
-- script: git config --global user.email "snehithaanpur456@gmail.com" 
+- script: git config --global user.email "snehithaanpur456@gmail.com"
+- script: curl -H 'Authorization:token 7ebe2bb4948c33006f8f661bd44256c5dc51af5d'
 - script: git remote add new "https://github.com/snehithaanpur/MavenBuild.git"
 - script: git push new HEAD:master
 
