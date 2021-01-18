@@ -9,7 +9,8 @@ trigger:
 steps:
 - script: git config --global user.name "Snehitha Anpur"
 - script: git config --global user.email "snehithaanpur456@gmail.com"
-- script: git clone https://github.com/snehithaanpur/MavenBuild.git
+- script: 
+    git clone https://github.com/snehithaanpur/MavenBuild.git
     Username:snehithaanpur
     Password:7ebe2bb4948c33006f8f661bd44256c5dc51af5d
 - script: curl -u "username:7ebe2bb4948c33006f8f661bd44256c5dc51af5d" https://github.com/snehithaanpur/MavenBuild.git
