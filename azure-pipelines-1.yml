@@ -7,13 +7,14 @@ trigger:
 - master
 
 steps:
-- script: git config --global user.name "Snehitha Anpur"
-- script: git config --global user.email "snehithaanpur456@gmail.com"
+- script: 
+    git config --global user.name "Snehitha Anpur"
+    git config --global user.email "snehithaanpur456@gmail.com"
 - script: 
     curl -u "username:7ebe2bb4948c33006f8f661bd44256c5dc51af5d" https://github.com/snehithaanpur/MavenBuild.git
-    git remote add new "https://github.com/snehithaanpur/MavenBuild.git"
-- script: 
+    git remote add new "https://github.com/snehithaanpur/MavenBuild.git" 
     git push new HEAD:master
+- script: 
     Username:snehithaanpur
     Password:7ebe2bb4948c33006f8f661bd44256c5dc51af5d
 
