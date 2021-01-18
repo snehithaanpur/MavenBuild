@@ -13,7 +13,7 @@ steps:
 - script: 
     curl -u "username:7ebe2bb4948c33006f8f661bd44256c5dc51af5d" https://github.com/snehithaanpur/MavenBuild.git
     git remote add new "https://github.com/snehithaanpur/MavenBuild.git" 
-    git push new HEAD:master
+    git push new master
 - script: 
     Username:snehithaanpur
     Password:7ebe2bb4948c33006f8f661bd44256c5dc51af5d
