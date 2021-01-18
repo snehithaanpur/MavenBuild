@@ -1,0 +1,21 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+steps:
+- script: git config --global user.name "Snehitha Anpur"
+- script: 
+    git add remote new https://github.com/snehithaanpur/MavenBuild.git
+    username:snehithaanpur456@gmail.com
+    password:TRUEcolors@10
+    git push new HEAD:master
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
