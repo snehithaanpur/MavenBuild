@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: git config --global user.name "SnehithaAnpur"
+- script: git config --global user.name "Snehitha Anpur"
 - script: git config --global user.email "snehithaanpur456@gmail.com" 
 - script: git remote add new "https://github.com/snehithaanpur/MavenBuild.git"
 - script: git push new HEAD:master
