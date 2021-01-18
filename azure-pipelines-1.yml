@@ -10,8 +10,6 @@ steps:
 - checkout: self
   persistCredentials: true
 
-- script: 
-    git config --global user.name "Snehitha Anpur"
 - script: git config --global user.email "snehithaanpur456@gmail.com"
 - script: 
     git config --global user.name "Snehitha Anpur"
