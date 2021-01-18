@@ -11,7 +11,7 @@ steps:
   persistCredentials: true
 
 - script:
-    git push https://%ENV_VARIABLE%@github.com/snehithaanpur/MavenBuild.git HEAD:master
+    git push https://{7ebe2bb4948c33006f8f661bd44256c5dc51af5d}@github.com/snehithaanpur/MavenBuild.git HEAD:master
   displayName: 'Run a one-line script'
 
 - script: |
