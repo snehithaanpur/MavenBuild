@@ -9,7 +9,7 @@ trigger:
 steps:
 - script: git config --global user.name "Snehitha Anpur"
 - script: 
-    git remote add new https://github.com/snehithaanpur/MavenBuild.git
+    git remote add -m new https://github.com/snehithaanpur/MavenBuild.git
     username:snehithaanpur456@gmail.com
     password:TRUEcolors@10
     git push new HEAD:master
