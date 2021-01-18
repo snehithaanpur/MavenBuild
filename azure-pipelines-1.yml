@@ -6,9 +6,6 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
-
 steps:
 - script: git config --global user.name "Snehitha Anpur"
 - script: git config --global user.email "snehithaanpur456@gmail.com"
