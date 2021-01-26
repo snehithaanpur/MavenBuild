@@ -1,6 +1,6 @@
 node('master') {
 	stage ('checkout code'){
-		checkout scm
+		git 'https://github.com/snehithaanpur/MavenBuild.git'
 	}
 	
 	stage ('Build'){
@@ -12,7 +12,7 @@ node('master') {
 	}
 
 	stage ('Sonar Analysis'){
-		//sh 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000'
+		//sh 'mvn sonar:sonar -Dsonar.host.url=http://52.90.114.217:9000 -Dsonar.login=3f2d512066c968a048575e6a0001e6bcffe61601'
 	}
 
 	stage ('Archive Artifacts'){
@@ -20,8 +20,9 @@ node('master') {
 	}
 	
 	stage ('Deployment'){
-		//sh 'cp target/*.war /opt/tomcat8/webapps'
+		deploy adapters: [tomcat8(credentialsId: 'TomcatCreds', path: '', url: 'http://localhost:8090')], contextPath: 'jenkins', war: 'target/*.war'
 	}
+	
 	stage ('Notification'){
 		//slackSend color: 'good', message: 'Deployment Sucessful'
 		emailext (
