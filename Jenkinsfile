@@ -20,7 +20,7 @@ node('master') {
 	}
 	
 	stage ('Deployment'){
-		deploy adapters: [tomcat8(credentialsId: 'tomcatcreds', path: '', url: 'http://localhost:8090')], contextPath: 'jenkins', war: 'target/*.war'
+		deploy adapters: [tomcat8(credentialsId: 'tomcatcred', path: '', url: 'http://localhost:8090')], contextPath: 'jenkins', war: 'target/*.war'
 	}
 	
 	stage ('Notification'){
