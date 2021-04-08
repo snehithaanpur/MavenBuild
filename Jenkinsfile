@@ -1,7 +1,5 @@
 node('master') 
 
-agent { dockerfile true }
-
 {
 	stage ('checkout code'){
 		git 'https://github.com/snehithaanpur/MavenBuild.git'
