@@ -1,5 +1,7 @@
 node('master') 
 
+agent { dockerfile true }
+
 {
 	stage ('checkout code'){
 		git 'https://github.com/snehithaanpur/MavenBuild.git'
@@ -21,11 +23,7 @@ node('master')
 		//archiveArtifacts artifacts: 'target/*.war'
 		
 	}
-	stage ('image')
-	{
-	 agent { dockerfile true }
 		
-	}
 	
 	stage ('Deployment'){
 		deploy adapters: [tomcat8(credentialsId: 'tomcatcred', path: '', url: 'http://localhost:8090')], contextPath: 'jenkins-new', war: 'target/*.war'
