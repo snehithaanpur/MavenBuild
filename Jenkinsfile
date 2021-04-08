@@ -21,7 +21,7 @@ node('master')
 		//archiveArtifacts artifacts: 'target/*.war'
 		
 	}
-	Stage('image')
+	stage ('image')
 	{
 	 agent { dockerfile true }
 		
