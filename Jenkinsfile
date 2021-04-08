@@ -18,7 +18,7 @@ node('master')
 	}
 
 	stage ('Archive Artifacts'){
-		archiveArtifacts artifacts: 'target/*.war'
+		//archiveArtifacts artifacts: 'target/*.war'
 		
 	}
 	Stage('image')
