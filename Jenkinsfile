@@ -1,4 +1,6 @@
-node('master') {
+node('master') 
+
+{
 	stage ('checkout code'){
 		git 'https://github.com/snehithaanpur/MavenBuild.git'
 	}
@@ -17,6 +19,12 @@ node('master') {
 
 	stage ('Archive Artifacts'){
 		archiveArtifacts artifacts: 'target/*.war'
+		
+	}
+	Stage('image')
+	{
+	 agent { dockerfile true }
+		
 	}
 	
 	stage ('Deployment'){
